@@ -1,0 +1,140 @@
+* {
+    /* border: 1px dotted; */
+    margin: 0px;
+}
+
+
+/* ---------------------MENU------------------ */
+header{
+    padding-top: 20px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}
+header a{
+      color: black;
+    text-decoration: none;
+}
+  
+nav a {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#brand {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+
+}
+
+
+
+
+
+
+
+
+/* ------------------GRID--------------------- */
+
+main {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10px 1fr 1fr;
+    grid-template-areas:
+    "ol ol"
+    "leftside rightside"
+    "productimage productimage";
+}
+
+
+#productimage {
+    grid-area: leftside;
+}
+
+#buysection {
+    grid-area: rightside;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#productinfo {
+    grid-area: productimage;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------Bread crumbs--------------------- */
+ol {
+    grid-area: ol;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: -43px;
+}
+
+ol img {
+    margin-top: 4px;
+}
+
+ol li {
+    list-style-type: none;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.greycrumb{
+    color: #D5D5D5;
+}
+
+
+/* ------------------BUY SECTION--------------------- */
+
+#buysection p {
+    font-size: 17px;
+}
+
+form {
+    margin-top: 40px;
+   text-align: center;
+
+}
+label {
+    font-weight: bold;
+}
+
+select {
+    border-radius: 25px;
+    margin-left: 10px;
+    background-color: black; 
+    border: none;
+    color: white;
+    width: 80px;
+    padding: 7px 17px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border:0px;
+    outline:0px;
+    background: url(../assets/selectarrow.svg) no-repeat right black;
+    -webkit-appearance: none;
+    background-position-x: 50px;
+}
+button {
+    border-radius: 25px;
+    margin-top: 10px;
+    background-color: black; 
+    border: none;
+    color: white;
+    width: 200px;
+    padding: 13px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}

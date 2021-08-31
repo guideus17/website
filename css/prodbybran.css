@@ -34,20 +34,37 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
     padding-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1400px;
-    display: grid;
-    gap: 63px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15px 1fr 1fr;
-    grid-template-areas:
-    "ol ol ol ol"
-    "first second third forth"
-    "fifth sixth seventh eighth";
+    margin-left: 275px;
+    margin-right: 275px;
 }
 
+.productsgrid {
+    gap: 63px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+}
 
+.productimageimgwithshadow {
+    box-shadow: 2px 2px 5px #D5D5D5;
+}
+
+.discounttag {
+    position: absolute;
+    padding: 5px;
+    margin-left: 265px;
+    margin-top: -10px;
+    width: 40px;
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    z-index: 10;
+}
+
+.nodiscount {
+display: none;
+}
 
 ol {
     grid-area: ol;
@@ -68,76 +85,25 @@ ol li {
     padding-right: 10px;
 }
 
-
-/* ---------------------smallProduct------------------ */
-
-.smallProduct {
-    grid-area: first;
-}
-
-
-
-/* ---------------------smallProduct_onSale------------------ */
-
-.smallProduct_onSale {
-    grid-area: second;
-}
-
-
-
-/* ---------------------smallProduct_soldOut------------------ */
-
-.smallProduct_soldOut {
-    grid-area: third;
-}
-
-
-
-/* ---------------------smallProduct_soldOut_onSale------------------ */
-
-.smallProduct_soldOut_onSale {
-    grid-area: forth;
-}
-
-
-
-
-.subtle {
+.smallinfo {
     color:#D5D5D5;
 }
 
-.imgwithshadow {
-    box-shadow: 2px 2px 5px #D5D5D5;
+
+.soldoutimg {
+    position: absolute;
+    z-index: 9;
+    pointer-events: none;  
+}
+.disappear {
+    display: none;
 }
 
 h3 {
     margin-top: 5px;
 }
 
-.pricediscounted {
-    text-decoration-line: line-through;
+.oldpricescratch {
+  text-decoration-line: line-through;  
 }
 
-.discounttag {
-    position: absolute;
-    padding: 5px;
-    margin-left: 265px;
-    margin-top: -10px;
-    width: 40px;
-    background-color: red;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-    z-index: 10;
-}
-
-.soldoutimg {
-    position: absolute;
-    z-index: 9;
-    pointer-events: none;
-}
-
-article img:hover {
-    box-shadow: 0px 0px 10px #D1D1D1;
-}

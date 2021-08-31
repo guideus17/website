@@ -25,10 +25,10 @@
     <li class="greycrumb">Home</li>
     <img src="assets/nextarrowgrey.svg" height="13px" alt="next">
     <li class="greycrumb">Brands</li>
-    <img src="assets/nextarrowgrey.svg"  height="13px"alt="next">
-    <li class="greycrumb">Nike</li>
+    <img src="assets/nextarrowgrey.svg"  height="13px" alt="next">
+    <li class="greycrumb" id="brandol">Nike</li>
     <img src="assets/nextarrow.svg"  height="13px"alt="next">
-    <li>Sahara Team India Fanwear Round Neck Jersey</li>
+    <li id="productnameol">Sahara Team India Fanwear Round Neck Jersey</li>
 </ol>
 
 
@@ -37,7 +37,7 @@
 <!-- -----------------------------------------------PRODUCT IMAGE------------------------------------------- -->
 
 <section id="productimage">
-    <img src="assets/tshirt1.png" alt="Sahara Team India Fanwear Round Neck Jersey">
+    <img src="assets/tshirt1.png" alt="Sahara Team India Fanwear Round Neck Jersey" height="930px">
 </section>
 
 
@@ -47,7 +47,9 @@
 <!-- -----------------------------------------------BUY SECTION------------------------------------------- --> 
 <section id="buysection">
 <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
-<p>Nike | T-shirts</p>
+<section id="smallinfoundername">
+<p class="brandname">Nike</p> <p>&nbsp|&nbsp</p> <p class="subcatg">T-shirts</p>
+</section>
 <form>
     <label
       >Choose a size
@@ -69,19 +71,19 @@
 
     <dl>
       <dt>Model name</dt>
-      <dd>Sahara Team India Fanwear Round Neck Jersey</dd>
+      <dd class="productname">Sahara Team India Fanwear Round Neck Jersey</dd>
       <dt>Color</dt>
-      <dd>Blue</dd>
+      <dd id="color">Blue</dd>
       <dt>Inventory number</dt>
-      <dd>1163</dd>
+      <dd class="idnumber">1163</dd>
     </dl>
-    <h3>Nike</h3>
-    <p>Nike, creating experiences for today’s athlete</p>
+    <h3 class="brandname">Nike</h3>
+    <p id="brandbio">Nike, creating experiences for today’s athlete</p>
 </section>
 
 </main>
 
-
+<script src="js/product.js"></script>
 
 
 

@@ -1,162 +1,152 @@
 * {
-    /* border: 1px dotted; */
-    margin: 0px;
+  /* border: 1px dotted; */
+  margin: 0px;
 }
-
 
 /* ---------------------MENU------------------ */
-header{
-    padding-top: 20px;
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+header {
+  padding-top: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
 }
-header a{
-      color: black;
-    text-decoration: none;
+header a {
+  color: black;
+  text-decoration: none;
 }
-  
+
 nav a {
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #brand {
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
-
-
-
-
 
 #productimage img {
-    box-shadow: 2px 2px 5px #D5D5D5;
+  box-shadow: 2px 2px 5px #d5d5d5;
 }
-
 
 /* ------------------GRID--------------------- */
 
 main {
-    margin-top: 50px;
-    padding-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1400px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15px 1fr 2fr;
-    grid-template-areas:
+  margin-top: 50px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1400px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15px 1fr 2fr;
+  grid-template-areas:
     "ol ol"
     "leftside rightside"
     "leftside productimage";
 }
 
-
 #productimage {
-    grid-area: leftside;
+  grid-area: leftside;
 }
 
 #buysection {
-    grid-area: rightside;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 55px;
+  grid-area: rightside;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 55px;
 }
 
 #productinfo {
- 
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #D5D5D5;
-    padding-left: 40px;
-    padding-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d5d5d5;
+  padding-left: 40px;
+  padding-top: 40px;
 }
 
 /* ------------------Bread crumbs--------------------- */
 ol {
-    grid-area: ol;
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    margin-left: -43px;
+  grid-area: ol;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin-left: -43px;
 }
 
 ol img {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 ol li {
-    list-style-type: none;
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+  list-style-type: none;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.greycrumb{
-    color: #D5D5D5;
+.greycrumb {
+  color: #d5d5d5;
 }
-
 
 /* ------------------BUY SECTION--------------------- */
 
+#smallinfoundername {
+  display: flex;
+}
+
 #buysection p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 form {
-    margin-top: 40px;
-   text-align: center;
-
+  margin-top: 40px;
+  text-align: center;
 }
 label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 select {
-    border-radius: 25px;
-    margin-left: 10px;
-    background-color: black; 
-    border: none;
-    color: white;
-    width: 80px;
-    padding: 7px 17px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border:0px;
-    outline:0px;
-    background: url(../assets/selectarrow.svg) no-repeat right black;
-    -webkit-appearance: none;
-    background-position-x: 50px;
+  border-radius: 25px;
+  margin-left: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  width: 80px;
+  padding: 7px 17px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px;
+  outline: 0px;
+  background: url(../assets/selectarrow.svg) no-repeat right black;
+  -webkit-appearance: none;
+  background-position-x: 50px;
 }
 button {
-    border-radius: 25px;
-    margin-top: 10px;
-    background-color: black; 
-    border: none;
-    color: white;
-    width: 200px;
-    padding: 13px 5px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+  border-radius: 25px;
+  margin-top: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  width: 200px;
+  padding: 13px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
 }
-
-
 
 /* ------------------PRODUCT IMAGE--------------------- */
 h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-dd{
-    margin-bottom: 20px;
+dd {
+  margin-bottom: 20px;
 }

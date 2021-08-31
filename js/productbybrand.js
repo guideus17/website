@@ -16,7 +16,7 @@ console.log(data);
 
 function showProduct(product) {
     // grab template and cloone it
-const templateSelection = document.querySelector("#IndividualProduct").content;
+const templateSelection = document.querySelector(".IndividualProduct").content;
 const cloneOfTemplate = templateSelection.cloneNode(true);
 
 
@@ -35,14 +35,13 @@ cloneOfTemplate.querySelector(".productimageimgwithshadow").src = `https://kea-a
 if(product.soldout == 1){
     console.log("its available")
 
-    cloneOfTemplate.querySelector("#soldoutsituation").classList = "";
-    cloneOfTemplate.querySelector("#soldoutsituation").offsetHeight;
-    cloneOfTemplate.querySelector("#soldoutsituation").classList.add("soldoutimg");
+    cloneOfTemplate.querySelector(".soldoutsituation").classList = "soldoutimg";
+
 }
 
 
 // price productS
-cloneOfTemplate.querySelector("#oldpriceid").textContent = `DKK ${product.price},-`;
+cloneOfTemplate.querySelector(".oldpriceid").textContent = `DKK ${product.price},-`;
 
 
 
@@ -53,32 +52,29 @@ const newprice =  Math.round(newpricenoround);
 
 
 // discount % productS
-cloneOfTemplate.querySelector("#discountid").textContent = `-${product.discount}%`;
+cloneOfTemplate.querySelector(".discountid").textContent = `-${product.discount}%`;
 
 // DISCOUNT productS
 if(product.discount){
     console.log("discount found")
 
     // show discount number
-    cloneOfTemplate.querySelector("#discountid").classList = "";
-    cloneOfTemplate.querySelector("#discountid").offsetHeight;
-    cloneOfTemplate.querySelector("#discountid").classList.add("discounttag");
+  
+    cloneOfTemplate.querySelector(".discountid").classList = "discounttag";
 
 
        // show new price
-       cloneOfTemplate.querySelector("#newpriceid").classList = "";
-       cloneOfTemplate.querySelector("#newpriceid").offsetHeight;
-       cloneOfTemplate.querySelector("#newpriceid").classList.add("newprice");
+    
+       cloneOfTemplate.querySelector(".newpriceid").classList = "newprice newpriceid";
 
 
          // scratch the old price
-         cloneOfTemplate.querySelector("#oldpriceid").classList = "";
-         cloneOfTemplate.querySelector("#oldpriceid").offsetHeight;
-         cloneOfTemplate.querySelector("#oldpriceid").classList.add("oldpricescratch");
+       
+         cloneOfTemplate.querySelector(".oldpriceid").classList = "oldpricescratch";
 
          
 // change new price
-cloneOfTemplate.querySelector("#newpriceid").textContent = `DKK ${newprice},-`;
+cloneOfTemplate.querySelector(".newpriceid").textContent = `DKK ${newprice},-`;
 
 }
 

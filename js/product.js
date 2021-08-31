@@ -1,4 +1,4 @@
-const url= "https://kea-alt-del.dk/t7/api/products/2805"
+const url= "https://kea-alt-del.dk/t7/api/products/2800"
 
 fetch (url)
 .then((res) => res.json())

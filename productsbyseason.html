@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Products By Brand">
     <title>Products By Brand</title>
-    <link rel="stylesheet" href="css/prodbybran.css">
+    <link rel="stylesheet" href="css/prodbyseason.css">
 </head>
 <body>
     <header>
         <img src="assets/logo.png" alt="Logo Brand">
         <nav>
             <a href="#">Categories</a>
-            <a id="brand" href="brandslist.html">Brands</a>
-            <a href="#">Seasons</a>
+            <a id="brand">Brands</a>
+            <a href="seasonlist.html">Seasons</a>
         </nav>
     </header>
 <main>
-    <ol>
+    <ol> <li class="greycrumb">Home</li>
+      <img src="assets/nextarrowgrey.svg" height="13px" alt="next">
+      <li class="greycrumb" ><a href="seasonlist.html">Seasons</a></li>
+
                <img src="assets/nextarrow.svg"  height="13px"alt="next">
-        <li>Nike</li>
+        <li id="pageseason"></li>
     </ol>
-    
+
+  
     
 
 
@@ -43,9 +47,8 @@
                alt="soldout"
              />
      
-             <a href="individualproduct.html"> <img class="productimageimgwithshadow"
+             <a class="imageofproduct" href="individualproduct.html"> <img class="productimageimgwithshadow"
                src="assets/4brandbag.png"
-               height="397px"
                alt="Blue T20 Indian"
              /> </a>
      
@@ -66,7 +69,7 @@
     
 </main>
 
-<script src="js/productbybrand.js"></script>
+<script src="js/productbyseason.js"></script>
 
 
 

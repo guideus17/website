@@ -74,7 +74,7 @@ section ol {
   margin-top: 50px;
 }
 
-li a {
+h2 a {
   text-decoration: none;
   color: black;
 }
@@ -96,3 +96,5 @@ h2 {
   font-size: 30px;
   margin-bottom: 10px;
 }
+
+

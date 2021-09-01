@@ -1,4 +1,7 @@
-const url = "https://kea-alt-del.dk/t7/api/products";
+const urlParams = new URLSearchParams(window.location.search);
+const seasonselection = urlParams.get("season");
+
+const url = "https://kea-alt-del.dk/t7/api/products?season="+ seasonselection;
 
 fetch(url)
 .then(function(res){
@@ -25,10 +28,16 @@ const cloneOfTemplate = templateSelection.cloneNode(true);
 
 
 // change info of products
+document.querySelector("#pageseason").textContent = seasonselection;
+
+
 cloneOfTemplate.querySelector(".smallinfo").textContent = `${product.articletype} | ${product.brandname}`;
 cloneOfTemplate.querySelector("h3").textContent = `${product.productdisplayname}`;
 
 cloneOfTemplate.querySelector(".productimageimgwithshadow").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+
+cloneOfTemplate.querySelector("a").setAttribute("href","individualproduct.html?id=" + product.id);
+//  = `${product.productdisplayname}`;
 
 
 // SOLD OUT productS

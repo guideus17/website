@@ -40,9 +40,10 @@ main {
 
 .productsgrid {
     place-self: center;
-    gap: 63px;
+    gap: 3vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+
 }
 
 .productimageimgwithshadow {
@@ -51,8 +52,8 @@ main {
 
 .discounttag {
     position: absolute;
+    right: -0.8vw;
     padding: 5px;
-    margin-left: 265px;
     margin-top: -10px;
     width: 40px;
     background-color: red;
@@ -62,9 +63,15 @@ main {
     font-size: 17px;
     z-index: 10;
 }
+.toppartproduct {
+    width: 20vw;
+    position: relative;
+
+}
 
 .nodiscount {
 display: none;
+
 }
 
 ol {
@@ -108,3 +115,26 @@ h3 {
   text-decoration-line: line-through;  
 }
 
+.greycrumb {
+    color: #d5d5d5;
+  }
+
+  ol a{
+    text-decoration: none;
+    color: #d5d5d5;
+  }
+  ol {
+      margin-bottom: 20px;
+  }
+
+  .toppartproduct img {
+      width: 100%;
+  }
+
+  .toppartproduct {
+    width: 100%;
+    position: relative;
+
+}
+
+ 

@@ -2,13 +2,19 @@
   /* border: 1px dotted; */
   margin: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+  --greycolor: #d5d5d5;
+  --mainfont: 'Bebas Neue', cursive;
+  --arialfont: Arial;
+}
 
 /* ---------------------MENU------------------ */
 header {
   padding-top: 20px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-family: var(--mainfont);
+  font-size: 30px;
 }
 header a {
   color: black;
@@ -28,9 +34,11 @@ nav a {
 
 
 /* ------------------GRID--------------------- */
-
+h1 {
+  letter-spacing: 2px;
+}
 main {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--mainfont);
   margin-top: 50px;
   padding-bottom: 100px;
   margin-left: 5vw;
@@ -55,7 +63,7 @@ main {
 }
 
 #productimage img {
-  box-shadow: 2px 2px 5px #d5d5d5;
+  box-shadow: 2px 2px 5px var(--greycolor);
  width: 100%;
 }
 
@@ -63,15 +71,15 @@ main {
 
 #buysection {
   grid-area: rightside;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--mainfont);
   padding-top: 55px;
   padding-bottom: 55px;
 }
 
 #productinfo {
   grid-area: rightbottom;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #d5d5d5;
+  font-family: var(--arialfont);
+  background-color: var(--greycolor);
   padding: 40px;
   
 }
@@ -79,9 +87,10 @@ main {
 /* ------------------Bread crumbs--------------------- */
 ol {
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--mainfont);
   font-size: 17px;
   margin-left: -43px;
+  letter-spacing: 1px;
 }
 
 ol img {
@@ -96,13 +105,14 @@ ol li {
 }
 
 .greycrumb {
-  color: #d5d5d5;
+  color: var(--greycolor);
 }
 
 /* ------------------BUY SECTION--------------------- */
 
 #smallinfoundername {
   display: flex;
+  font-family: var(--arialfont);
 }
 
 #buysection p {
@@ -110,6 +120,7 @@ ol li {
 }
 
 form {
+  font-family: var(--arialfont);
   margin-top: 40px;
   text-align: center;
 }
@@ -163,7 +174,7 @@ dd {
 
 a{
   text-decoration: none;
-  color: #d5d5d5;
+  color: var(--greycolor);
 }
 
 
@@ -182,7 +193,7 @@ a{
 header {
   padding-top: 20px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--mainfont);
   font-size: 20px;
 }
 
@@ -192,7 +203,7 @@ header img {
 
   ol {
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--mainfont);
     font-size: 14px;
     margin-left: -43px;
   }
@@ -231,17 +242,17 @@ header img {
   
   #buysection {
     grid-area: middle;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--mainfont);
     padding-top: 10px;
     padding-bottom: 20px;
   }
   
   #productinfo {
     grid-area: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #d5d5d5;
+    font-family: var(--arialfont);
+    background-color: var(--greycolor);
     padding: 40px;
-    
+
   }
 
 

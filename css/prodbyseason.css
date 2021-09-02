@@ -2,14 +2,20 @@
     /* border: 1px dotted; */
     margin: 0px;
 }
-
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+    --greycolor: #d5d5d5;
+    --mainfont: 'Bebas Neue', cursive;
+    --arialfont: Arial;
+  }
+ 
+  
 /* ---------------------MENU------------------ */
 header{
     padding-top: 20px;
 text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+font-family: var(--mainfont);
+font-size: 30px;
 }
 header a{
       color: black;
@@ -31,7 +37,7 @@ nav a {
 
 
 main {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--mainfont);
     margin-top: 50px;
     padding-bottom: 100px;
     margin-left: 5vw;
@@ -46,7 +52,7 @@ main {
 }
 
 .productimageimgwithshadow {
-    box-shadow: 2px 2px 5px #D5D5D5;
+    box-shadow: 2px 2px 5px var(--greycolor);
 }
 
 .discounttag {
@@ -57,7 +63,7 @@ main {
     width: 40px;
     background-color: red;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--arialfont);
     font-weight: bold;
     font-size: 17px;
     z-index: 10;
@@ -75,9 +81,10 @@ display: none;
 
 ol {
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--mainfont);
     font-size: 17px;
     margin-left: -43px;
+    letter-spacing: 1px;
 }
 
 ol img {
@@ -92,7 +99,13 @@ ol li {
 }
 
 .smallinfo {
-    color:#D5D5D5;
+    color:var(--greycolor);
+   font-family: var(--arialfont);
+   margin-bottom: 3px;
+}
+
+.newprice {
+    font-family: var(--arialfont);
 }
 
 
@@ -107,19 +120,22 @@ ol li {
 
 h3 {
     margin-top: 5px;
+    letter-spacing: 1px;
 }
 
 .oldpricescratch {
-  text-decoration-line: line-through;  
+  text-decoration-line: line-through;
+  font-family: var(--arialfont);
+
 }
 
 .greycrumb {
-    color: #d5d5d5;
+    color: var(--greycolor);
   }
 
   ol a{
     text-decoration: none;
-    color: #d5d5d5;
+    color: var(--greycolor);
   }
   ol {
       margin-bottom: 20px;
@@ -161,7 +177,7 @@ h3 {
     header {
       padding-top: 20px;
       text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: var(--mainfont);
       font-size: 20px;
     }
     
@@ -171,7 +187,7 @@ h3 {
     
       ol {
         display: flex;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: var(--mainfont);
         font-size: 14px;
         margin-left: -43px;
       }
@@ -190,7 +206,7 @@ h3 {
     
 h3 {
     margin-top: 5px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .smallinfo {

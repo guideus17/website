@@ -2,13 +2,19 @@
   /* border: 1px dotted; */
   margin: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --greycolor: #d5d5d5;
+  --mainfont: 'Bebas Neue', cursive;
+}
 
 /* ---------------------MENU------------------ */
 header {
   padding-top: 20px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-family: var(--mainfont);
+  font-size: 30px;
 }
 header a {
   color: black;
@@ -29,7 +35,7 @@ nav a {
 ol {
   grid-area: ol;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--mainfont);
   font-size: 20px;
   margin-left: -43px;
 }
@@ -39,7 +45,7 @@ ol img {
 }
 
 ol li {
-  color: #d5d5d5;
+  color: var(--greycolor);
   list-style-type: none;
   display: flex;
   padding-left: 10px;
@@ -47,8 +53,8 @@ ol li {
 }
 
 #greyarea {
-  background-color: #d5d5d5;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--greycolor);
+  font-family: var(--mainfont);
   margin-top: 50px;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -96,5 +102,176 @@ h2 {
   font-size: 30px;
   margin-bottom: 10px;
 }
+
+
+
+
+
+/* ----------------------season selection----------------------- */
+
+
+
+
+#seasonselection {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 50px;
+}
+
+.backgroundblack {
+  background-color: var(--greycolor);
+  height: 500px;
+}
+
+
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  position: relative;
+  z-index: 0;
+}
+
+.seasonselection a {
+  font-family: "Bungee", cursive;
+  font-size: 2.5em;
+}
+
+.linkcolor{
+  color: #7D7D7D
+}
+
+
+.linkwinter::before {
+  background-color: #7ED9D6;
+}
+
+.linkspring::before {
+  background-color: #DC91B4;
+}
+
+.linksummer::before {
+  background-color: #ECC855;
+}
+
+.linkfall::before {
+  background-color: #EB936C;
+}
+
+
+
+.link-one {
+  transition: color 0.6s cubic-bezier(0.32, 0, 0.67, 0);
+  line-height: 1em;
+  text-decoration: none;
+  font-family: var(--mainfont);
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.link-one:hover {
+  color: #111;
+  transition: color 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.link-one::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  right: 0;
+  clip-path: circle(0% at 50% calc(50%));
+  transition: clip-path 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-one:hover::before {
+  clip-path: circle(100% at 50% 50%);
+}
+
+.link-one::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  right: 0;
+  background-color: black;
+
+  clip-path: polygon(
+    40% 0%,
+    60% 0%,
+    60% 0%,
+    40% 0%,
+    40% 100%,
+    60% 100%,
+    60% 100%,
+    40% 100%
+  );
+
+  transition: clip-path 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-one:hover::after {
+
+  clip-path: polygon(
+    40% 10%,
+    60% 10%,
+    60% 35%,
+    40% 35%,
+    40% 90%,
+    60% 90%,
+    60% 65%,
+    40% 65%
+  );
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------MOBILE---------------------------------- */
+
+@media only screen and (max-width: 1100px) {
+
+
+
+  header {
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--mainfont);
+    font-size: 20px;
+  }
+  
+  header img {
+    height: 40px;
+  }
+
+  .link-one {
+    transition: color 0.6s cubic-bezier(0.32, 0, 0.67, 0);
+    line-height: 1em;
+    text-decoration: none;
+    font-family: var(--mainfont);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  
+  
+  }
+
 
 

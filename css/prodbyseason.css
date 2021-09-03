@@ -1,219 +1,187 @@
 * {
-    /* border: 1px dotted; */
-    margin: 0px;
+  /* border: 1px dotted; */
+  margin: 0px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 :root {
-    --greycolor: #d5d5d5;
-    --mainfont: 'Bebas Neue', cursive;
-    --arialfont: Arial;
-  }
- 
-  
+  --greycolor: #d5d5d5;
+  --mainfont: "Bebas Neue", cursive;
+  --arialfont: Arial;
+}
+
 /* ---------------------MENU------------------ */
-header{
-    padding-top: 20px;
-text-align: center;
-font-family: var(--mainfont);
-font-size: 30px;
+header {
+  padding-top: 20px;
+  text-align: center;
+  font-family: var(--mainfont);
+  font-size: 30px;
 }
-header a{
-      color: black;
-    text-decoration: none;
+header a {
+  color: black;
+  text-decoration: none;
 }
-  
+header a:hover {
+  color: var(--greycolor);
+}
+
 nav a {
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #brand {
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
-
-
 main {
-    font-family: var(--mainfont);
-    margin-top: 50px;
-    padding-bottom: 100px;
-    margin-left: 5vw;
+  font-family: var(--mainfont);
+  margin-top: 50px;
+  padding-bottom: 100px;
+  margin-left: 5vw;
   margin-right: 5vw;
 }
 
 .productsgrid {
-    gap: 3vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-
+  gap: 3vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
 }
 
 .productimageimgwithshadow {
-    box-shadow: 2px 2px 5px var(--greycolor);
+  box-shadow: 2px 2px 5px var(--greycolor);
 }
 
 .discounttag {
-    position: absolute;
-    right: -0.8vw;
-    padding: 5px;
-    margin-top: -10px;
-    width: 40px;
-    background-color: red;
-    color: white;
-    font-family: var(--arialfont);
-    font-weight: bold;
-    font-size: 17px;
-    z-index: 10;
+  position: absolute;
+  right: -0.8vw;
+  padding: 5px;
+  margin-top: -10px;
+  width: 40px;
+  background-color: red;
+  color: white;
+  font-family: var(--arialfont);
+  font-weight: bold;
+  font-size: 17px;
+  z-index: 10;
 }
 .toppartproduct {
-    width: 20vw;
-    position: relative;
-
+  width: 20vw;
+  position: relative;
 }
 
 .nodiscount {
-display: none;
-
+  display: none;
 }
 
 ol {
-    display: flex;
-    font-family: var(--mainfont);
-    font-size: 17px;
-    margin-left: -43px;
-    letter-spacing: 1px;
+  display: flex;
+  font-family: var(--mainfont);
+  font-size: 17px;
+  margin-left: -43px;
+  letter-spacing: 1px;
 }
 
 ol img {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 ol li {
-    list-style-type: none;
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
+  list-style-type: none;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .smallinfo {
-    color:var(--greycolor);
-   font-family: var(--arialfont);
-   margin-bottom: 3px;
+  color: var(--greycolor);
+  font-family: var(--arialfont);
+  margin-bottom: 3px;
 }
 
 .newprice {
-    font-family: var(--arialfont);
+  font-family: var(--arialfont);
 }
-
 
 .soldoutimg {
-    position: absolute;
-    z-index: 9;
-    pointer-events: none;  
+  position: absolute;
+  z-index: 9;
+  pointer-events: none;
 }
 .disappear {
-    display: none;
+  display: none;
 }
 
 h3 {
-    margin-top: 5px;
-    letter-spacing: 1px;
+  margin-top: 5px;
+  letter-spacing: 1px;
 }
 
 .oldpricescratch {
   text-decoration-line: line-through;
   font-family: var(--arialfont);
-
 }
 
 .greycrumb {
-    color: var(--greycolor);
-  }
-
-  ol a{
-    text-decoration: none;
-    color: var(--greycolor);
-  }
-  ol {
-      margin-bottom: 20px;
-  }
-
-  .toppartproduct img {
-      width: 100%;
-  }
-
-  .toppartproduct {
-    width: 100%;
-    position: relative;
-
+  color: var(--greycolor);
 }
 
- 
+ol a {
+  text-decoration: none;
+  color: var(--greycolor);
+}
+ol {
+  margin-bottom: 20px;
+}
 
+.toppartproduct img {
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.toppartproduct {
+  width: 100%;
+  position: relative;
+}
 
 /* ------------------------------MOBILE---------------------------------- */
 
 @media only screen and (max-width: 1100px) {
+  header {
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--mainfont);
+    font-size: 20px;
+  }
 
+  header img {
+    height: 40px;
+  }
 
+  ol {
+    display: flex;
+    font-family: var(--mainfont);
+    font-size: 14px;
+    margin-left: -43px;
+  }
 
-    header {
-      padding-top: 20px;
-      text-align: center;
-      font-family: var(--mainfont);
-      font-size: 20px;
-    }
-    
-    header img {
-      height: 40px;
-    }
-    
-      ol {
-        display: flex;
-        font-family: var(--mainfont);
-        font-size: 14px;
-        margin-left: -43px;
-      }
-      
-      ol img {
-        margin-top: 2px;
-      }
-      
-      ol li {
-        list-style-type: none;
-        display: flex;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-      
-    
-h3 {
+  ol img {
+    margin-top: 2px;
+  }
+
+  ol li {
+    list-style-type: none;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  h3 {
     margin-top: 5px;
     font-size: 15px;
-}
+  }
 
-.smallinfo {
+  .smallinfo {
     font-size: 15px;
+  }
 }
-
- 
-    
-    
-    }

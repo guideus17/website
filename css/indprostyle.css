@@ -2,10 +2,10 @@
   /* border: 1px dotted; */
   margin: 0px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 :root {
   --greycolor: #d5d5d5;
-  --mainfont: 'Bebas Neue', cursive;
+  --mainfont: "Bebas Neue", cursive;
   --arialfont: Arial;
 }
 
@@ -20,6 +20,9 @@ header a {
   color: black;
   text-decoration: none;
 }
+header a:hover {
+  color: var(--greycolor);
+}
 
 nav a {
   display: inline;
@@ -31,7 +34,6 @@ nav a {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
-
 
 /* ------------------GRID--------------------- */
 h1 {
@@ -56,18 +58,14 @@ main {
     "leftside rightbottom";
 }
 
-
 #productimage {
   grid-area: leftside;
-  
 }
 
 #productimage img {
   box-shadow: 2px 2px 5px var(--greycolor);
- width: 100%;
+  width: 100%;
 }
-
-
 
 #buysection {
   grid-area: rightside;
@@ -81,7 +79,6 @@ main {
   font-family: var(--arialfont);
   background-color: var(--greycolor);
   padding: 40px;
-  
 }
 
 /* ------------------Bread crumbs--------------------- */
@@ -172,34 +169,24 @@ dd {
   margin-bottom: 20px;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--greycolor);
 }
 
-
-
-
-
-
-
-
 /* ------------------------------MOBILE---------------------------------- */
 
 @media only screen and (max-width: 1100px) {
+  header {
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--mainfont);
+    font-size: 20px;
+  }
 
-
-
-header {
-  padding-top: 20px;
-  text-align: center;
-  font-family: var(--mainfont);
-  font-size: 20px;
-}
-
-header img {
-  height: 40px;
-}
+  header img {
+    height: 40px;
+  }
 
   ol {
     display: flex;
@@ -207,18 +194,17 @@ header img {
     font-size: 14px;
     margin-left: -43px;
   }
-  
+
   ol img {
     margin-top: 2px;
   }
-  
+
   ol li {
     list-style-type: none;
     display: flex;
     padding-left: 5px;
     padding-right: 5px;
   }
-  
 
   .productgrid {
     margin-top: 20px;
@@ -231,29 +217,22 @@ header img {
       "middle"
       "bottom";
   }
-  
-  
+
   #productimage {
     grid-area: top;
-    
   }
-  
 
-  
   #buysection {
     grid-area: middle;
     font-family: var(--mainfont);
     padding-top: 10px;
     padding-bottom: 20px;
   }
-  
+
   #productinfo {
     grid-area: bottom;
     font-family: var(--arialfont);
     background-color: var(--greycolor);
     padding: 40px;
-
   }
-
-
 }

@@ -2,11 +2,12 @@
   /* border: 1px dotted; */
   margin: 0px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
   --greycolor: #d5d5d5;
-  --mainfont: 'Bebas Neue', cursive;
+  --mainfont: "Bebas Neue", cursive;
+  --animationduration: 0.4s;
 }
 
 /* ---------------------MENU------------------ */
@@ -31,7 +32,9 @@ nav a {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
-
+header a:hover {
+  color: var(--greycolor);
+}
 ol {
   grid-area: ol;
   display: flex;
@@ -103,14 +106,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-
-
-
-
 /* ----------------------season selection----------------------- */
-
-
-
 
 #seasonselection {
   margin: 0;
@@ -124,8 +120,6 @@ h2 {
   background-color: var(--greycolor);
   height: 500px;
 }
-
-
 
 .link-container {
   display: flex;
@@ -142,31 +136,28 @@ h2 {
   font-size: 2.5em;
 }
 
-.linkcolor{
-  color: #7D7D7D
+.linkcolor {
+  color: #7d7d7d;
 }
 
-
 .linkwinter::before {
-  background-color: #7ED9D6;
+  background-color: #7ed9d6;
 }
 
 .linkspring::before {
-  background-color: #DC91B4;
+  background-color: #dc91b4;
 }
 
 .linksummer::before {
-  background-color: #ECC855;
+  background-color: #ecc855;
 }
 
 .linkfall::before {
-  background-color: #EB936C;
+  background-color: #eb936c;
 }
 
-
-
 .link-one {
-  transition: color 0.6s cubic-bezier(0.32, 0, 0.67, 0);
+  transition: color var(--animationduration) cubic-bezier(0.32, 0, 0.67, 0);
   line-height: 1em;
   text-decoration: none;
   font-family: var(--mainfont);
@@ -177,7 +168,7 @@ h2 {
 
 .link-one:hover {
   color: #111;
-  transition: color 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: color var(--animationduration) cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .link-one::before {
@@ -189,7 +180,7 @@ h2 {
   top: 0;
   right: 0;
   clip-path: circle(0% at 50% calc(50%));
-  transition: clip-path 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: clip-path var(--animationduration) cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .link-one:hover::before {
@@ -217,11 +208,10 @@ h2 {
     40% 100%
   );
 
-  transition: clip-path 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: clip-path var(--animationduration) cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .link-one:hover::after {
-
   clip-path: polygon(
     40% 10%,
     60% 10%,
@@ -234,34 +224,22 @@ h2 {
   );
 }
 
-
-
-
-
-
-
-
-
-
 /* ------------------------------MOBILE---------------------------------- */
 
 @media only screen and (max-width: 1100px) {
-
-
-
   header {
     padding-top: 20px;
     text-align: center;
     font-family: var(--mainfont);
     font-size: 20px;
   }
-  
+
   header img {
     height: 40px;
   }
 
   .link-one {
-    transition: color 0.6s cubic-bezier(0.32, 0, 0.67, 0);
+    transition: color var(--animationduration) cubic-bezier(0.32, 0, 0.67, 0);
     line-height: 1em;
     text-decoration: none;
     font-family: var(--mainfont);
@@ -269,9 +247,4 @@ h2 {
     font-weight: bold;
     letter-spacing: 3px;
   }
-  
-  
-  }
-
-
-
+}

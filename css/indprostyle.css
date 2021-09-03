@@ -2,10 +2,15 @@
   /* border: 1px dotted; */
   margin: 0px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(../BebasNeue-Regular.ttf);
+}
+
 :root {
   --greycolor: #d5d5d5;
-  --mainfont: "Bebas Neue", cursive;
+  --mainfont: BebasNeue;
   --arialfont: Arial;
 }
 
